@@ -1,0 +1,20 @@
+{
+	"manifest_version": 2,
+	"name": "Youtube BG",
+	"description": "Youtube background playback for Kiwi Browser",
+	"version": "1.1",
+	"content_scripts": [
+		{
+		  "matches":[
+			  "*://*.youtube.com/*",
+			  "*://*.youtube-nocookie.com/*"
+		  ],
+		  "js": ["content.js"],
+		  "all_frames": true,
+		  "run_at": "document_start"
+		}
+	],
+	"icons": {
+		"64": "icon.png"
+	}
+}
